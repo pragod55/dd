@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Our Services - Gym Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background: linear-gradient(90deg, #007BFF, #00A0FF);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 50px;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: auto;
+            color: white;
+        }
+
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 15px;
+            margin: 0 10px;
+            border-radius: 50px;
+        }
+
+        .navbar .nav-links a:hover {
+            background: green;
+        }
+
+        .services {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 50px 20px;
+            margin-top: 80px; /* Adjusted to prevent overlap with navbar */
+            flex: 1;
+        }
+
+        .services h2 {
+            font-size: 36px;
+            color: #ff6600;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        .services-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .service-card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .service-card i {
+            font-size: 50px;
+            color: #ff6600;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .service-card a {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #ff6600;
+            color: white;
+            font-size: 16px;
+        }
+
+        .service-card a:hover {
+            background-color: #e55b00;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 20px 10px;
+            text-align: center;
+            font-size: 14px;
+            margin-top: auto;
+        }
+
+        footer .social-icons i {
+            font-size: 20px;
+            margin: 0 10px;
+        }
+
+        footer .copyright {
+            margin-top: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><i class="fas fa-dumbbell"></i> GymFit</div>
+        <div class="nav-links">
+            <a href="home.html"><i class="fas fa-home"></i> Home</a>
+            <a href="Activity.html"><i class="fa-solid fa-users-gear"></i> Services</a>
+            <a href="contact.html"><i class="fa-solid fa-phone-volume"></i> Contact us</a>
+            <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+        </div>
+    </nav>
+
+    <div class="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <i class="fa fa-dumbbell"></i>
+                <h3>Personal Training</h3>
+                <p>Get one-on-one training with our professional trainers to achieve your fitness goals faster.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div class="service-card">
+                <i class="fa fa-heartbeat"></i>
+                <h3>Health Programs</h3>
+                <p>Join our health programs tailored to your fitness level to boost your overall health and wellness.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div class="service-card">
+                <i class="fa fa-bicycle"></i>
+                <h3>Cardio Classes</h3>
+                <p>Participate in high-energy cardio classes to burn calories and improve your stamina.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <!-- Additional service cards -->
+            <div class="service-card">
+                <i class="fa fa-yoga"></i>
+                <h3>Yoga Classes</h3>
+                <p>Relax your mind and body with our calming yoga sessions.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div class="service-card">
+                <i class="fa fa-swimmer"></i>
+                <h3>Swimming Lessons</h3>
+                <p>Take swimming lessons to improve your skills and enjoy the water.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Gym Website. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+
+

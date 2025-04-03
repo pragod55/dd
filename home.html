@@ -1,0 +1,130 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Gym Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            background-image: url(2.jpg);
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .navbar {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background: linear-gradient(90deg, #007BFF, #00A0FF);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 50px;
+            z-index: 1000;
+            transition: background 0.3s ease;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: auto;
+            color: white;
+        }
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 15px;
+            margin: 0 10px;
+            border-radius: 50px;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .navbar .nav-links a:hover {
+            background: green;
+            transform: scale(1.1);
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .search-bar {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-bar input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        .search-bar button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .search-bar i {
+            font-size: 22px;
+            color: #2a5298;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><i class="fas fa-dumbbell"></i> GymFit</div>
+        <div class="nav-links">
+            <a href="home.html"><i class="fas fa-home"></i> Home</a>
+            <a href="Activity.html"><i class="fa-solid fa-users-gear"></i> Services</a>
+            <a href="contact.html"><i class="fa-solid fa-phone-volume"></i> Contact us</a>
+            <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Find Your Perfect workouts</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search workouts.,diet plan , mentors">
+            <button><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+
+</body>
+</html>

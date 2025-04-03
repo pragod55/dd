@@ -1,0 +1,134 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: orange;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: url('leg.png') no-repeat center center fixed;
+            background-size: cover;
+            color: black;
+            background-image: url(1.jpg);
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .navbar {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background: linear-gradient(90deg, #007BFF, #00A0FF);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 50px;
+            z-index: 1000;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: auto;
+            color: white;
+        }
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 15px;
+            margin: 0 10px;
+            border-radius: 50px;
+        }
+        .navbar .nav-links a:hover {
+            background: green;
+        }
+
+        .wrapper {
+            margin-top: 120px;
+            text-align: center;
+        }
+
+        .buttons {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .buttons button {
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+        .buttons button:hover {
+            background-color: #28a745;
+        }
+
+        .footer {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #222, #333);
+            color: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 24px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><i class="fas fa-dumbbell"></i> GymFit</div>
+        <div class="nav-links">
+            <a href="home.html"><i class="fas fa-home"></i> Home</a>
+            <a href="Activity.html"><i class="fa-solid fa-users-gear"></i> Services</a>
+            <a href="contact.html"><i class="fas fa-user-plus"></i> Contact us</a>
+            <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <h1>Welcome to Our Gym</h1>
+        <p>Join our gym and achieve your fitness goals with expert trainers and top-quality equipment.</p>
+        <p>Our facility provides state-of-the-art machines, personalized training plans, and group classes to keep you motivated.</p>
+        <p>Whether you're a beginner or a pro, our gym welcomes all fitness enthusiasts with open arms.</p>
+        <p><strong>"No pain, no gain. Stay strong, stay fit!"</strong></p>
+    </div>
+
+    <div class="buttons">
+        <button><i class="fas fa-user-plus"></i> Join Us</button>
+        <button><i class="fas fa-search"></i> Explore</button>
+    </div>
+
+    <footer class="footer">
+        &copy; 2025 GymFit. All Rights Reserved.
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
